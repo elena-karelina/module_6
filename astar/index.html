@@ -5,26 +5,42 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Алгоритмы</title>
    <link rel="stylesheet" href="../style.css">
-   <script src="script.js"></script>
+   <link rel="stylesheet" href="style1.css">
+   
+   <link type="image/x-icon" href="../laptop.ico" rel="shortcut icon">
 </head>
 
 <body>
-
+   
    <div id="header">
-      <div class="algoritm"><a href="../main/index.html">Главная</a></div>
-      <div class="algoritm"><a href="#">A*</a></div>
-      <div class="algoritm"><a href="../klaster/index.html">Алгоритм <br>кластеризации</a> </div>
-      <div class="algoritm"><a href="../geneticheskiy/index.html">Генетический <br>алгоритм</a></div>
-      <div class="algoritm"><a href="../muravi/index.html">Муравьиный <br>алгоритм</a></div>
-      <div class="algoritm"><a href="../derevo/index.html">Дерево <br>решений</a></div>
-      <div class="algoritm"><a href="../neyronka/index.html">Нейронная <br>сеть</a></div>
+      <div class="algoritm"><a href="../main/index.html" class="link "><span>Главная</span></a></div>
+      <div class="algoritm"><a href="#" class="link active" ><span>A*</span></a></div>
+      <div class="algoritm"><a href="../klaster/index.html" class="link"><span>Алгоритм<br>кластеризации</span></a> </div>
+      <div class="algoritm"><a href="../geneticheskiy/index.html" class="link"><span>Генетический<br>алгоритм</span> </a></div>
+      <div class="algoritm"><a href="../muravi/index.html" class="link"><span>Муравьиный<br>алгоритм</span></a></div>
+      <div class="algoritm"><a href="../derevo/index.html" class="link"><span>Дерево <br>решений</span></a></div>
+      <div class="algoritm"><a href="../neyronka/index.html" class="link"><span>Нейронная <br>сеть</span></a></div>
    </div>
    <div id="main">
-      
+      <div id="astar">
+         <div id="canvas">
+            <canvas></canvas>
+           
+         </div>
+         <div id="buttons">
+            <br><button id="start">выбрать старт</button>
+            <br><button id="finish">выбрать финиш</button>
+            <br><input type="number" size="3" id="sizeM" min="1" max="100" step="1s"  value="15">
+            <br><button id="free">убрать стену</button>
+            <br><button id="wall">добавить стену</button>
+            <br><button id="begin">начать</button>
+         </div>
+      </div>
 
    </div>
+   <script src="script.js"></script> 
 </body>
 
 </html>

@@ -2,29 +2,63 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="../style.css">
-   <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-   <div id="header">
-      <div class="algoritm"><a href="../main/index.html">Главная</a></div>
-      <div class="algoritm"><a href="#">A*</a></div>
-      <div class="algoritm"><a href="../klaster/index.html">Алгоритм <br>кластеризации</a> </div>
-      <div class="algoritm"><a href="../geneticheskiy/index.html">Генетический <br>алгоритм</a></div>
-      <div class="algoritm"><a href="../muravi/index.html">Муравьиный <br>алгоритм</a></div>
-      <div class="algoritm"><a href="../derevo/index.html">Дерево <br>решений</a></div>
-      <div class="algoritm"><a href="../neyronka/index.html">Нейронная <br>сеть</a></div>
-   </div>
-   <div id="main">
-      
+    <div id="header">
+        <div class="algoritm"><a href="../main/index.html">Главная</a></div>
+        <div class="algoritm"><a href="../astar/index.html">A*</a></div>
+        <div class="algoritm"><a href="../klaster/index.html">Алгоритм <br>кластеризации</a> </div>
+        <div class="algoritm"><a href="../geneticheskiy/index.html">Генетический <br>алгоритм</a></div>
+        <div class="algoritm"><a href="#">Муравьиный <br>алгоритм</a></div>
+        <div class="algoritm"><a href="../derevo/index.html">Дерево <br>решений</a></div>
+        <div class="algoritm"><a href="../neyronka/index.html">Нейронная <br>сеть</a></div>
+    </div>
+    <div class="header">
 
-   </div>
+    </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="toolbar">
+            <div class="button-wrapper">
+                <a id="start" class="task3-button">
+                    <span class="button__line button__line--top"></span>
+                    <span class="button__line button__line--right"></span>
+                    <span class="button__line button__line--bottom"></span>
+                    <span class="button__line button__line--left"></span>
+                    Запустить
+                </a>
+                <a id="clear" class="task3-button">
+                    <span class="button__line button__line--top"></span>
+                    <span class="button__line button__line--right"></span>
+                    <span class="button__line button__line--bottom"></span>
+                    <span class="button__line button__line--left"></span>
+                    Очистить поле</a>
+                <a id="video" class="task3-button"><span class="button__line button__line--top"></span>
+                    <span class="button__line button__line--right"></span>
+                    <span class="button__line button__line--bottom"></span>
+                    <span class="button__line button__line--left"></span>
+                    добавить атмосферы</a>
+
+            </div>
+        </div>
+
+        <canvas class="canvas" width="750" height="520"></canvas>
+        <video src="./music/VAVAN, Real Girl - Послала -  Я тебе песню вконтакте послалa.mp4" id="play"
+            class="vid"></video>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="video.js"></script>
 </body>
 
 </html>

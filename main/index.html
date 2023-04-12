@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Главная</title>
    <link rel="stylesheet" href="../style.css">
    <script src="script.js"></script>
+   <link type="image/x-icon" href="../laptop.ico" rel="shortcut icon">
 </head>
 
 <body>
    
-   <div id="header" vertical-aling: middle>
-      <div class="algoritm"><span><a href="#">Главная</a></span></div>
-      <div class="algoritm"><span><a href="../astar/index.html">A*</a></span></div>
-      <div class="algoritm"><span><a href="../klaster/index.html">Алгоритм<br>кластеризации</a></span> </div>
-      <div class="algoritm"><span><a href="../geneticheskiy/index.html">Генетический<br>алгоритм </a></span></div>
-      <div class="algoritm"><span><a href="../muravi/index.html">Муравьиный<br>алгоритм</a></span></div>
-      <div class="algoritm"><span><a href="../derevo/index.html">Дерево <br>решений</a></span></div>
-      <div class="algoritm"><span><a href="../neyronka/index.html">Нейронная <br>сеть</a></span></div>
+   <div id="header">
+      <div class="algoritm"><a href="#" class="link active"><span>Главная</span></a></div>
+      <div class="algoritm"><a href="../astar/index.html" class="link" ><span>A*</span></a></div>
+      <div class="algoritm"><a href="../klaster/index.html" class="link"><span>Алгоритм<br>кластеризации</span></a> </div>
+      <div class="algoritm"><a href="../geneticheskiy/index.html" class="link"><span>Генетический<br>алгоритм</span> </a></div>
+      <div class="algoritm"><a href="../muravi/index.html" class="link"><span>Муравьиный<br>алгоритм</span></a></div>
+      <div class="algoritm"><a href="../derevo/index.html" class="link"><span>Дерево <br>решений</span></a></div>
+      <div class="algoritm"><a href="../neyronka/index.html" class="link"><span>Нейронная <br>сеть</span></a></div>
    </div>
    <div id="main">
-      <div id="text"> 
-         <p id="info">HELLO
+      <div id="text">  
+         <p id="info">HELLO 
             <br>IT'S OUR TEAM       
          </p>
          <p id="team">
@@ -33,7 +33,10 @@
          </p>
       </div>
       <div id="photo">
-         <img id="logo" src="image1.png">
+         <img id="logo" src="image1.png" onclick="playAudio()">
+<audio id="myAudio">
+
+</audio>
       </div>
    </div>
 </body>
