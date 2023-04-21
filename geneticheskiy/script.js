@@ -43,7 +43,7 @@ function mouseClick(click){
 
     context.beginPath();
     context.arc(pointForCanvasX, pointForCanvasY, 10, 0, 2*Math.PI, false);
-    context.fillStyle = 'orange';
+    context.fillStyle = 'red';
     context.fill();
 
     vertexes.push([pointForCanvasX, pointForCanvasY]);

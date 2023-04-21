@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="../style.css">
-   <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleTree.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <title>Дерево Решений</title>
 </head>
-
 <body>
-   
-   <div id="header">
-      <div class="algoritm"><a href="../main/index.html">Главная</a></div>
-      <div class="algoritm"><a href="../astar/index.html">A*</a></div>
-      <div class="algoritm"><a href="../klaster/index.html">Алгоритм <br>кластеризации</a> </div>
-      <div class="algoritm"><a href="../geneticheskiy/index.html">Генетический <br>алгоритм</a></div>
-      <div class="algoritm"><a href="../muravi/index.html">Муравьиный <br>алгоритм</a></div>
-      <div class="algoritm"><a href="#">Дерево <br>решений</a></div>
-      <div class="algoritm"><a href="../neyronka/index.html">Нейронная <br>сеть</a></div>
-   </div>
-   <div id="main">
-      
+	<div id="header">
+	<div class="algoritm"><a href="../main/index.html">Главная</a></div>
+	<div class="algoritm"><a href="../astar/index.html">A*</a></div>
+	<div class="algoritm"><a href="../klaster/index.html">Алгоритм <br>кластеризации</a> </div>
+	<div class="algoritm"><a href="../geneticheskiy/index.html">Генетический <br>алгоритм</a></div>
+	<div class="algoritm"><a href="#">Муравьиный <br>алгоритм</a></div>
+	<div class="algoritm"><a href="../derevo/Task5.html">Дерево <br>решений</a></div>
+	<div class="algoritm"><a href="../neyronka/index.html">Нейронная <br>сеть</a></div>
+</div>
 
-   </div>
+    <div class="grid">
+		<div class="logoHolder">
+						
+		</div>
+		
+		<div class="treeContainer">
+			<ul class="tree"></ul>
+		</div>
+		<div class="pathsContainer">
+			<ul class="pathsList">
+				<h2 id="res">Результаты</h2>
+			</ul>
+		</div>
+		<div class="inputContainer">
+			<div class="switchContainer">
+				
+				<div class="algorithmBtnsContainer">
+					<div style="height: 100px;"></div>
+					  <a id="start" class="task3-button">
+						<span class="button__line button__line--top"></span>
+						<span class="button__line button__line--right"></span>
+						<span class="button__line button__line--bottom"></span>
+						<span class="button__line button__line--left"></span>
+						Посторить Дерево
+					</a>
+					  <a id="clear" class="task3-button">
+						<span class="button__line button__line--top"></span>
+						<span class="button__line button__line--right"></span>
+						<span class="button__line button__line--bottom"></span>
+						<span class="button__line button__line--left"></span>
+						Запустить</a>
+				</div>
+				
+			<div class="fileInputContainer">
+				<label for="upload" class="uploadLabel"><a id="clear" class="task3-button">
+					<span class="button__line button__line--top"></span>
+					<span class="button__line button__line--right"></span>
+					<span class="button__line button__line--bottom"></span>
+					<span class="button__line button__line--left"></span>
+					Выбрать Файл</a></button></label>
+				<span class="dataInfo">Файл не выбран</span>
+				<input type="file" id='upload' name="upload" accept=".csv, .txt">
+			</div>
+			<div class="textInputContainer">
+				<div>
+					<textarea id="textInput"></textarea>
+				</div>
+				<span class="dataInfo">Файл не выбран</span>
+			</div>
+			<label class="switch">
+				<input type="checkbox" id="inputTypeSwitch">
+				<span class="slider round"></span>
+			</label>
+			<span>Ручной ввод</span>
+		</div>
+		</div>
+		
+	</div>
+	
+	<script src="EnterValue.js"></script>
+	<script src="tree.js"></script>
+	<script src="workWithTree.js"></script>
+	<script src="BeginWorkWithTree.js"></script>
 </body>
-
 </html>
