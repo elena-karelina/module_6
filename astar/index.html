@@ -6,9 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Алгоритмы</title>
-   <link rel="stylesheet" href="../style.css">
-   <link rel="stylesheet" href="style1.css">
-   
+   <link rel="stylesheet" href="../style1.css">
+   <link rel="stylesheet" href="style.css">
    <link type="image/x-icon" href="../laptop.ico" rel="shortcut icon">
 </head>
 
@@ -25,17 +24,22 @@
    </div>
    <div id="main">
       <div id="astar">
-         <div id="canvas">
-            <canvas></canvas>
-           
+         <div id="canva">
+            <canvas id="canvas"></canvas>
          </div>
          <div id="buttons">
-            <br><button id="start">выбрать старт</button>
-            <br><button id="finish">выбрать финиш</button>
-            <br><input type="number" size="3" id="sizeM" min="1" max="100" step="1s"  value="15">
-            <br><button id="free">убрать стену</button>
-            <br><button id="wall">добавить стену</button>
+            <br><button id="start">выбрать <br>старт</button>
+            <br><button id="finish">выбрать <br>финиш</button>
+            <p class="text"> Размер:</p>
+            <br><input type="number" size="3" id="sizeM" min="1" max="100" step="1"  value="15">
+            <br><button id="free">убрать <br>стену</button>
+            <br><button id="wall">добавить <br>стену</button>
             <br><button id="begin">начать</button>
+            <form>
+               <label>
+                  <p class="text">Анимация лабиринта <input id="animation" type="checkbox"></p>
+               </label>
+            </form>
          </div>
       </div>
 

@@ -5,26 +5,50 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="../style.css">
-   <script src="script.js"></script>
+   <title>Алгоритмы</title>
+   <link rel="stylesheet" href="../style1.css">
+   <link rel="stylesheet" href="style.css">
+   <link type="image/x-icon" href="../laptop.ico" rel="shortcut icon">
 </head>
 
 <body>
-   
+
    <div id="header">
-      <div class="algoritm"><a href="../main/index.html">Главная</a></div>
-      <div class="algoritm"><a href="../astar/index.html">A*</a></div>
-      <div class="algoritm"><a href="../klaster/index.html">Алгоритм <br>кластеризации</a> </div>
-      <div class="algoritm"><a href="../geneticheskiy/index.html">Генетический <br>алгоритм</a></div>
-      <div class="algoritm"><a href="../muravi/index.html">Муравьиный <br>алгоритм</a></div>
-      <div class="algoritm"><a href="../derevo/index.html">Дерево <br>решений</a></div>
-      <div class="algoritm"><a href="#">Нейронная <br>сеть</a></div>
+      <div class="algoritm"><a href="../main/index.html" class="link"><span>Главная</span></a></div>
+      <div class="algoritm"><a href="../astar/index.html" class="link"><span>A*</span></a></div>
+      <div class="algoritm"><a href="../klaster/index.html" class="link"><span>Алгоритм<br>кластеризации</span></a>
+      </div>
+      <div class="algoritm"><a href="../geneticheskiy/index.html" class="link"><span>Генетический<br>алгоритм</span>
+         </a></div>
+      <div class="algoritm"><a href="../muravi/index.html" class="link"><span>Муравьиный<br>алгоритм</span></a></div>
+      <div class="algoritm"><a href="../derevo/index.html" class="link"><span>Дерево <br>решений</span></a></div>
+      <div class="algoritm"><a href="#" class="link active"><span>Нейронная <br>сеть</span></a>
+      </div>
    </div>
+
    <div id="main">
-      
+      <div id="neyronka">
+         <div id="canva">
+            <canvas class="canvas" width="550" height="550"></canvas>
+         </div>
+         <div id="buttons">
+            <br><button id="run">обучение</button>
+            <br><button id="add">добавить<br>тест
+               <label>
+                  <input type="number" step="1" min="0" max="9" value="1" id="answerInput" />
+               </label></button>
+            <br><button id="saveK">сохранить <br>веса</button>
+            <button id="number">
+               <p>Ответ: <span id="answer">1</span></p>
+            </button>
+
+            <br><button id="ss">сброс весов</button>
+
+         </div>
+      </div>
 
    </div>
+   <script src="script.js"></script>
 </body>
 
 </html>

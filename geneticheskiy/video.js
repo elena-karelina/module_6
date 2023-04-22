@@ -13,9 +13,9 @@ canvas.addEventListener("transitionend", function() {
 canvas.style.display = "none";
 video.style.display = "inline";
 video.style.transition = "1s";
-video.style.width = "750px";
-video.style.height = "280px";
-video.style.marginTop = "123px";  
+video.style.width = "550px";
+//video.style.height = "280px";
+//video.style.marginTop = "123px";  
   
 
 
